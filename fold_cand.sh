@@ -19,8 +19,7 @@ outname=$(echo $outdir"/"$DM"_"$s_time)
 echo $inname $outname
 
 tsamp=0.00126646875
-bin=128
-
+bin=4096
 length=`python -c  "print $tsamp * $bin"`
 offset=`python -c "print $length / 2."`
 echo $length $offset

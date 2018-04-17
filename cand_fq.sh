@@ -7,5 +7,5 @@ cand_out_loc=$2
 cat $cand_list_file | grep -v "#" | sort -grk 1 | while read line
 do
     echo $line
-    ./fold_cand.sh $fil_file_loc $cand_out_loc $line
+    /data/TETHYS_1/craftop/virgo/scripts/f256.sh $fil_file_loc $cand_out_loc $line
 done
